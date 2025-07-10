@@ -14,10 +14,10 @@ variable "zones" {
 }
 
 locals {
-  cluster_name = "${var.project}-${random_string.suffix.result}"
+  cluster_name = "${var.project}-jp-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
-  length  = 8
+  length  = 5
   special = false
 }
